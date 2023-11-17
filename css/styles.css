@@ -1,0 +1,274 @@
+/*
+ Student Name: Miguel Poma
+ File Name: styles.css
+ Date: Nov 2, 2023
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, div,img, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+/* Style rule for images */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.round{
+    border-radius: 8px;
+    width: 400px;
+    height: 400px;
+}
+.team{
+
+    width: 750px;
+    height: 450px;
+}
+
+/* Style rules for header content */
+header {
+    text-align: center;
+    font-size: 3em;
+    color: #373684;
+}
+
+header h1 {
+    font-style: italic;
+}
+h2{
+    text-align: center;
+}
+
+/* Style rules for navigation area */
+nav {
+    background-color: #078e15;
+    padding: 1%;
+    margin-bottom: 1%;
+}
+
+nav ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li{
+    font-size: 1em;
+    font-family: 'Francois One', sans-serif;
+    border-top: 1px solid #fff; 
+}
+
+nav li:first-child {
+    border-top: none;
+}
+
+nav li a{
+    display: block;
+    color: #fff;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+#products, #services, #benefits, #offer1, #offer2, #offer3 {
+    margin: 0 2%;
+}
+
+/* Show mobile class, hide tablet-desktop class */
+.mobile {
+    display: block;
+    text-align: center;
+}
+
+.tablet-desktop {
+    display: none;
+}
+
+/* Style rules for main content */
+main {
+    padding: 2%;
+    background-color: #e5e9fc;
+    overflow: auto;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+main p {
+    font-size: 1.25em;
+}
+
+.action {
+    font-size: 1.75em;
+    color: #373684;
+    font-weight: bold;
+}
+
+
+#info {
+    clear: left;
+    background-color: #c0caf7;
+    padding: 1% 2%;
+}
+
+#contact {
+    text-align: center;
+}
+
+#contact a {
+    color: #4645a8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.round{
+    border-radius: 12px;
+}
+
+.external-link{
+    color: #099461;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#contact .contact-email-link{
+    color: #000000;
+    text-decoration:none;
+}
+
+.map{
+    border: 8px solid #0a339b;
+    width: 95%;
+    height: 50%;
+}
+
+
+/* Style rules for footer content */
+footer {
+    text-align: center;
+    font-size: 0.65em;
+    clear: left;
+}
+
+footer a {
+    color: #4645a8;
+    text-decoration: none;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 680px), print {
+    /* Tablet Viewport: Show tablet-desktop class, hide mobile class */
+    .tablet-desktop { 
+        display: block;  
+    }
+    
+    .mobile { 
+        display: none;    
+    }
+   
+    /* Tablet Viewport: Style rules for nav area */
+     nav li {
+        border-top: none;
+        display: inline-block;
+        border-right: 1px solid #fff; 
+    
+     }
+
+     nav li:last-child {
+        border-right: none;  
+     } 
+    
+     nav li a {
+        padding: 0.1em 0.75em;  
+     } 
+   
+     #offer1,#offer2,#offer3 {
+        width: 29%;
+        float: left;
+        margin: 0 2%;
+    }
+
+    .map { 
+        width: 600px;
+        height: 450px;
+    }
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1120px), print {
+
+     
+    /* Desktop Viewport: Style rules for nav area */  
+    nav {
+        padding: 1%;
+        margin-bottom: 1%;
+     }
+     
+    nav ul {   
+        list-style-type: none;
+        text-align: center; 
+    }
+
+    nav li {
+        font-size: 1.5em;
+    font-family: 'Francois One', sans-serif;
+    
+    }
+    
+    nav li:first-child {
+        border-top: none;
+    }
+
+    nav li a{
+        display: block;
+        color: #fff;
+        padding: 0.5em 1em;
+        text-decoration: none;
+    }
+        
+    nav li a:hover {  
+        color: #000;
+        background-color: #fff;   
+    } 
+    
+    /* Desktop Viewport: Style Rules for main content */  
+    main{
+        clear: left;
+    }
+    
+    main h1{
+        font-size: 1.8em;
+    }
+
+    #products, #services, #benefits { 
+        width: 29%;
+        float: left;
+        margin: 0 2%; 
+    }
+    
+    #exercises { 
+        clear: left;
+    }
+
+}
+
+/* Media Query for Large Desktop Viewports */ 
+@media screen and (min-width: 1921px) {
+
+    #container {
+        width: 1920px;
+        margin: 0 auto;
+         }
+
+}
+
+/* Media Query for Print */ 
+@media print { 
+
+    body {
+        background-color: #fff;
+        color: #000;
+    
+    }
+
+}
